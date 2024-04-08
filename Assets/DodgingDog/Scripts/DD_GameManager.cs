@@ -13,12 +13,17 @@ public class DD_GameManager : MonoBehaviour
     [SerializeField] private GameObject scoreText;
     [SerializeField] private GameObject GOPanel;
 
+
+
     private void Awake() { instance = this; }
 
     // Start is called before the first frame update
     void Start()
     {
         GOPanel.SetActive(false);
+        Screen.orientation = ScreenOrientation.Portrait;
+
+
     }
 
     // Update is called once per frame

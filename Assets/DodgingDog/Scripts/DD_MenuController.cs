@@ -9,7 +9,7 @@ public class DD_MenuController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Screen.orientation = ScreenOrientation.Portrait;
     }
 
     // Update is called once per frame
@@ -25,6 +25,11 @@ public class DD_MenuController : MonoBehaviour
     public void CR_Play()
     {
         SceneManager.LoadScene("CR_MainScene");
+    }
+
+    public void LR_Play()
+    {
+        SceneManager.LoadScene("LR_MainScene");
     }
 
     public void DD_Quit()

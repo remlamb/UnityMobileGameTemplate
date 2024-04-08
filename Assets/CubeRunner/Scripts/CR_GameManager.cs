@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class CR_GameManager : MonoBehaviour
 {
@@ -14,12 +16,16 @@ public class CR_GameManager : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private GameObject playButton;
+    [SerializeField] private GameObject menuButton;
     [SerializeField] private GameObject player;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        Screen.orientation = ScreenOrientation.Portrait;
+
+        playButton.SetActive(true);
+        menuButton.SetActive(true);
     }
 
     // Update is called once per frame
@@ -49,9 +55,14 @@ public class CR_GameManager : MonoBehaviour
     {
         player.SetActive(true);
         playButton.SetActive(false);
+        menuButton.SetActive(false);
 
         StartCoroutine("CR_SpawnObstacles");
         InvokeRepeating("CR_ScoreUp", 2f, 1f);
     }
 
+    public void CR_MainMenu()
+    {
+        SceneManager.LoadScene("DD_MainMenu");
+    }
 }
