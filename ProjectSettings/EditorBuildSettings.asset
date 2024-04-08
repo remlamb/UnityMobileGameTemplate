@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/CubeRunner/Scenes/MainScene.unity
+    path: Assets/CubeRunner/Scenes/CR_MainScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/DodgingDog/Scenes/DD_MainScene.unity
+    guid: d6ffbfed912761148a3b4e9d9b5df896
+  - enabled: 1
+    path: Assets/DodgingDog/Scenes/DD_MainMenu.unity
+    guid: 2b5f2141283c43c4ca4070a72ceab4c2
   m_configObjects: {}
