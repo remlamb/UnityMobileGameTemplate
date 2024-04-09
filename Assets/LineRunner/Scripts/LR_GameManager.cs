@@ -32,6 +32,7 @@ public class LR_GameManager : MonoBehaviour
         livesText.gameObject.GetComponent<TextMeshProUGUI>().text = "Lives: " + lives.ToString();
 
         Screen.orientation = ScreenOrientation.LandscapeLeft;
+        Physics.gravity = new Vector3(0, -9.81f, 0);
 
 
         menuUI.SetActive(true);

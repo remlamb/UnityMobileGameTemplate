@@ -22,7 +22,7 @@ public class DD_GameManager : MonoBehaviour
     {
         GOPanel.SetActive(false);
         Screen.orientation = ScreenOrientation.Portrait;
-
+        Physics.gravity = new Vector3(0, -9.81f, 0);
 
     }
 

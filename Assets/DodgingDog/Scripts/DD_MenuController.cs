@@ -31,6 +31,10 @@ public class DD_MenuController : MonoBehaviour
     {
         SceneManager.LoadScene("LR_MainScene");
     }
+    public void FB_Play()
+    {
+        SceneManager.LoadScene("FB_MainScene");
+    }
 
     public void DD_Quit()
     {
