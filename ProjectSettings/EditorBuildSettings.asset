@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/FlappyBird/Scenes/FB_MainScene.unity
     guid: 1d5de3278a4031c47b50a68e0fe60fbf
+  - enabled: 1
+    path: Assets/Testing/Scene/SwipeAndTime.unity
+    guid: 52a80a7958d74174d8b6be6b446e0c77
+  - enabled: 1
+    path: Assets/Testing/Scene/MovementOnTouch.unity
+    guid: a32ead14be9655b42a319ca655e2f248
   m_configObjects: {}

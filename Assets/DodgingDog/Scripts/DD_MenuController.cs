@@ -10,6 +10,8 @@ public class DD_MenuController : MonoBehaviour
     void Start()
     {
         Screen.orientation = ScreenOrientation.Portrait;
+        Physics.gravity = new Vector3(0, -9.81f, 0);
+        Time.timeScale = 1.0f;
     }
 
     // Update is called once per frame
@@ -34,6 +36,16 @@ public class DD_MenuController : MonoBehaviour
     public void FB_Play()
     {
         SceneManager.LoadScene("FB_MainScene");
+    }
+
+    public void Swipe_Play()
+    {
+        SceneManager.LoadScene("SwipeAndTime");
+    }
+
+    public void Movement_Play()
+    {
+        SceneManager.LoadScene("MovementOnTouch");
     }
 
     public void DD_Quit()
